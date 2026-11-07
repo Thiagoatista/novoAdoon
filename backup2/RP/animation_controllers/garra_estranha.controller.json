@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.garra_estranha.twitch": {
+      "initial_state": "waiting",
+      "states": {
+        "waiting": {
+          "on_entry": [
+            "v.random_wait = math.random(10.0, 20.0);",
+            "v.anim_choice = math.random(0.0, 1.0);"
+          ],
+          "transitions": [
+            { "play_curto": "query.state_time >= v.random_wait && v.anim_choice < 0.33 && !v.is_sliding" },
+            { "play_rotacao": "query.state_time >= v.random_wait && v.anim_choice >= 0.33 && v.anim_choice < 0.66 && !v.is_sliding" },
+            { "play_surto": "query.state_time >= v.random_wait && v.anim_choice >= 0.66 && !v.is_sliding" }
+          ]
+        },
+        "play_surto": {
+          "animations": [ "surto_anim" ],
+          "transitions": [
+            { "waiting": "v.is_sliding || query.state_time >= 2.0" }
+          ]
+        },
+        "play_curto": {
+          "animations": [ "curto_anim" ],
+          "transitions": [
+            { "waiting": "v.is_sliding || query.state_time >= 2.0" }
+          ]
+        },
+        "play_rotacao": {
+          "animations": [ "rotacao_anim" ],
+          "transitions": [
+            { "waiting": "v.is_sliding || query.state_time >= 2.25" }
+          ]
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "parkour:settings_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      " D ",
+      "D D",
+      " D "
+    ],
+    "key": {
+      "D": {
+        "item": "minecraft:dirt"
+      }
+    },
+    "result": {
+      "item": "parkour:settings",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:dirt"
+      }
+    ]
+  }
+}
+

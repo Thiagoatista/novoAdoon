@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.player.first_person.swap_item": {
+      "loop": true,
+      "bones": {
+        "rightarm": {
+          "position": [
+            0.0,
+            "query.is_item_name_any('slot.weapon.mainhand', 'parkour:garra_suspeita') ? 0.0 : -10.0 * (1.0 - variable.player_arm_height)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.player.first_person.empty_hand": {
+      "loop": true,
+      "anim_time_update": "temp.now = query.is_item_name_any('slot.weapon.mainhand', 'parkour:garra_suspeita'); variable.minha_garra_ativa = temp.now; return query.anim_time + query.delta_time;",
+      "bones": {
+        "rightarm": {
+          "position": [
+            "variable.minha_garra_ativa ? 13.5 : 13.5",
+            "variable.minha_garra_ativa ? -10.0 : -10.0",
+            "variable.minha_garra_ativa ? 12.0 : 12.0"
+          ],
+          "rotation": [
+            "variable.minha_garra_ativa ? 95.0 : 95.0 + variable.is_using_vr * 7.5",
+            "variable.minha_garra_ativa ? -45.0 : -45.0 + variable.is_using_vr * 7.5",
+            "variable.minha_garra_ativa ? 115.0 : 115.0 + variable.is_using_vr * -2.5"
+          ]
+        }
+      }
+    }
+  }
+}
+

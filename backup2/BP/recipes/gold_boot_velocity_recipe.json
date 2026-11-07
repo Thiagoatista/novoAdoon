@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "parkour:gold_boot_velocity_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "EGE",
+      "ENE",
+      "BGB"
+    ],
+    "key": {
+      "E": {
+        "item": "parkour:solucao_energetica"
+      },
+      "G": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "B": {
+        "item": "minecraft:blue_dye"
+      },
+      "N": {
+        "item": "minecraft:netherite_boots"
+      }
+    },
+    "result": {
+      "item": "parkour:gold_boot_velocity",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:netherite_boots"
+      }
+    ]
+  }
+}

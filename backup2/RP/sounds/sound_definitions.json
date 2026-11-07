@@ -1,0 +1,16 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "stop_fall_sound": {
+      "category": "player",
+      "sounds": [
+        {
+          "name": "sounds/mechanics/fall_stop/anvil_sound_fall_stop",
+          "volume": 1.0,
+          "pitch": 1.0,
+          "is_3d": false
+        }
+      ]
+    }
+  }
+}

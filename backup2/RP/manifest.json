@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Thiago"
+		],
+		"product_type": "addon"
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [ 1, 21, 120 ],
+		"uuid": "09688d13-66a3-49a4-b80e-8b59382f5f09",
+		"version": [ 1, 0, 0 ]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "a2c7bd05-a845-4714-9060-bffd282dab8c",
+			"version": [ 1, 0, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "14ed06f2-1b19-4f2a-bcb9-6cf29abdafb6",
+			"version": [ 1, 0, 0 ]
+		}
+	]
+}
+

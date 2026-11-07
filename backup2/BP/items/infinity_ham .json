@@ -1,0 +1,38 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "parkour:infinity_ham",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.miscFood"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:food": {
+        "nutrition": 5,
+        "saturation_modifier": 0.5,
+        "can_always_eat": true,
+        "using_converts_to": "parkour:infinity_ham"
+      },
+      "minecraft:cooldown": {
+        "category": "infinity_ham_cd",
+        "duration": 0.0
+      },
+      "minecraft:icon": {
+        "texture": "infinity_ham"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_food"
+        ]
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      }
+    }
+  }
+}

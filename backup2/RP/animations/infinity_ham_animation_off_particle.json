@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.infinity_ham_off_particle": {
+			"loop": true,
+			"bones": {
+				"tlint1": { "scale": 0 },
+				"tlint2": { "scale": 0 },
+				"tlint3": { "scale": 0 },
+				"tlint4": { "scale": 0 },
+				"tlint5": { "scale": 0 },
+				"tlint6": { "scale": 0 },
+				"tlint7": { "scale": 0 },
+				"tlint8": { "scale": 0 }
+			}
+		}
+	}
+}

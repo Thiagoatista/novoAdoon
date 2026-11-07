@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.gold_boot.wings": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [ "anim.idle_gold_boot" ],
+          "transitions": [
+            { "active": "query.modified_move_speed > 0.2" }
+          ],
+          "blend_transition": 0.2
+        },
+        "active": {
+          "animations": [ "anim.active_gold_boot" ],
+          "transitions": [
+            { "idle": "query.modified_move_speed < 0.1" }
+          ],
+          "blend_transition": 2.0
+        }
+      }
+    }
+  }
+}
+

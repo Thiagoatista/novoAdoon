@@ -1,0 +1,89 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.garra_pulo": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "transitions": [
+            { "subindo": "!query.is_on_ground && query.vertical_speed > 0.02" },
+            { "caindo": "!query.is_on_ground && query.vertical_speed < -0.02" }
+          ]
+        },
+        "subindo": {
+          "animations": [ 
+            { "up_anim": "v.is_first_person" } 
+          ],
+          "transitions": [
+            { "subindo_parada": "!query.is_on_ground && math.abs(query.vertical_speed) <= 0.02" },
+            { "impacto": "query.is_on_ground" },
+            { "caindo": "query.vertical_speed < -0.02" }
+          ],
+          "blend_transition": 0.2
+        },
+        "subindo_parada": {
+          "animations": [ 
+            { "parada_suave_up_fp_anim": "v.is_first_person" }
+          ],
+          "transitions": [
+            { "impacto": "query.is_on_ground" },
+            { "idle": "query.any_animation_finished" },
+            { "subindo": "!query.is_on_ground && query.vertical_speed > 0.02" },
+            { "caindo": "!query.is_on_ground && query.vertical_speed < -0.02" }
+          ],
+          "blend_transition": 0.15
+        },
+        "caindo": {
+          "animations": [ 
+            { "dawn_anim": "v.is_first_person" },
+            { "tp_dawn_anim": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "impacto": "query.is_on_ground" },
+            { "caindo_parada": "!query.is_on_ground && math.abs(query.vertical_speed) <= 0.02" },
+            { "subindo": "query.vertical_speed > 0.02" },
+            { "caindo_loop": "query.any_animation_finished" }
+          ],
+          "blend_transition": 0.2
+        },
+        "caindo_loop": {
+          "animations": [ 
+            { "dawn_loop_anim": "v.is_first_person" },
+            { "tp_dawn_anim": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "impacto": "query.is_on_ground" },
+            { "caindo_parada": "!query.is_on_ground && math.abs(query.vertical_speed) <= 0.02" },
+            { "subindo": "query.vertical_speed > 0.02" }
+          ],
+          "blend_transition": 0.2
+        },
+        "caindo_parada": {
+          "animations": [ 
+            { "parada_suave_dawn_fp_anim": "v.is_first_person" },
+            { "tp_parada_suave_anim": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "impacto": "query.is_on_ground" },
+            { "idle": "query.any_animation_finished" },
+            { "subindo": "!query.is_on_ground && query.vertical_speed > 0.02" },
+            { "caindo": "!query.is_on_ground && query.vertical_speed < -0.02" }
+          ],
+          "blend_transition": 0.15
+        },
+        "impacto": {
+          "animations": [ 
+            { "impact_dawn_anim": "v.is_first_person" },
+            { "tp_impact_anim": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "idle": "query.any_animation_finished" },
+            { "subindo": "!query.is_on_ground && query.vertical_speed > 0.02" },
+            { "caindo": "!query.is_on_ground && query.vertical_speed < -0.02" }
+          ],
+          "blend_transition": 0.15
+        }
+      }
+    }
+  }
+}

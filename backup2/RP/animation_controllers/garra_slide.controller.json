@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.garra_slide": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "transitions": [
+            { "sliding": "v.is_sliding" }
+          ]
+        },
+        "sliding": {
+          "animations": [
+            { "slide_anim": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "idle": "!v.is_sliding" }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}
+

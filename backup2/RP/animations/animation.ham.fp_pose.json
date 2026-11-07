@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ham.fp_pose": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [0, 0, 0],
+					"position": [0, 1, 2],
+					"scale": 1
+				}
+			}
+		}
+	}
+}

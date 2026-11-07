@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ham.eating": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "eating": "query.main_hand_item_use_duration > 0.0" }
+          ]
+        },
+        "eating": {
+          "animations": [ "eating_anim" ],
+          "transitions": [
+            { "default": "query.main_hand_item_use_duration <= 0.0" }
+          ]
+        }
+      }
+    },
+    "controller.animation.ham.first_person_bob": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "bobbing": "query.main_hand_item_use_duration > 0.0 && c.is_first_person" }
+          ]
+        },
+        "bobbing": {
+          "animations": [ "first_person_bob" ],
+          "transitions": [
+            { "default": "query.main_hand_item_use_duration <= 0.0 || !c.is_first_person" }
+          ]
+        }
+      }
+    },
+    "controller.animation.ham.sparkle": {
+      "initial_state": "waiting",
+      "states": {
+        "waiting": {
+          "animations": [ "particle_off" ],
+          "transitions": [
+            { "sparkling": "query.state_time >= 7.0" }
+          ]
+        },
+        "sparkling": {
+          "animations": [ "particle_anim" ],
+          "transitions": [
+            { "waiting": "query.state_time >= 0.75" }
+          ]
+        }
+      }
+    }
+  }
+}

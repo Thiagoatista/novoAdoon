@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.particle",
+    "texture_data": {
+        "know_paricle": {
+            "textures": "textures/particle/know_paricle"
+        },
+        "raio_particle_know": {
+            "textures": "textures/particle/raio_particle_know"
+        }
+    }
+}

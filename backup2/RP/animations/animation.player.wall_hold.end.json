@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.wall_hold.end": {
+			"loop": "hold_on_last_frame",
+			"override_previous_animation": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [-167.27335, -2.22452, 5.35686],
+					"position": [0, 0, 0]
+				},
+				"RightArm": {
+					"rotation": [-167.27335, 2.22452, -5.35686],
+					"position": [0, 0, 0]
+				},
+				"LeftLeg": {
+					"rotation": [4.31324, -15.64926, 3.72191],
+					"position": [2, 5, -6]
+				},
+				"RightLeg": {
+					"rotation": [4.66216, 15.68526, -3.62448],
+					"position": [-2, 5, -6]
+				},
+				"root": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"Waist": {
+					"rotation": [20, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

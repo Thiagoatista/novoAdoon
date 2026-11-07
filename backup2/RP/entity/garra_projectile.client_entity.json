@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "parkour:garra_projectile",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/items/graple_garra_estranha"
+            },
+            "geometry": {
+                "default": "geometry.garra_estranha_projectile"
+            },
+            "render_controllers": [ "controller.render.default" ]
+        }
+    }
+}

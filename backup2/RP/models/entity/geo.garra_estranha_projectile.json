@@ -1,0 +1,63 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.garra_estranha_projectile",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "mao_garra_oxidada_projectile",
+					"pivot": [0, 0, 1],
+					"rotation": [-90, 0, 0],
+					"locators": {
+						"lead": [0, 0.75, 1]
+					}
+				},
+				{
+					"name": "palma_da_mao_projectile",
+					"parent": "mao_garra_oxidada_projectile",
+					"pivot": [0, 1, 1],
+					"cubes": [
+						{
+							"origin": [-0.5, -0.5, 0.5],
+							"size": [1, 1.5, 1],
+							"uv": {
+								"north": {"uv": [8.5, 12], "uv_size": [1, 1.5]},
+								"east": {"uv": [10.5, 10.5], "uv_size": [-1, 1.5]},
+								"south": {"uv": [8.5, 13], "uv_size": [-1, 1.5]},
+								"west": {"uv": [9.5, 12], "uv_size": [1, 1.5]},
+								"up": {"uv": [2, 9], "uv_size": [1, 1]},
+								"down": {"uv": [2, 11], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "dedo_projectile",
+					"parent": "palma_da_mao_projectile",
+					"pivot": [0, -0.5, 1],
+					"cubes": [
+						{
+							"origin": [0, -5.35, -1.75],
+							"size": [0, 5.5, 5.5],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [0, 2]},
+								"east": {"uv": [15.5, 10.5], "uv_size": [0.5, 0], "uv_rotation": 270},
+								"south": {"uv": [0, 0], "uv_size": [0, 2]},
+								"west": {"uv": [10.5, 16], "uv_size": [5.5, -5.5], "uv_rotation": 270},
+								"up": {"uv": [0, 0], "uv_size": [0, 1]},
+								"down": {"uv": [0, 1], "uv_size": [0, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

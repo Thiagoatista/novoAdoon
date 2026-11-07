@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.garra_mochila": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "transitions": [
+            { "ative": "v.is_attacking" }
+          ]
+        },
+        "ative": {
+          "animations": [ "elice_ative_anim" ],
+          "transitions": [
+            { "idle": "!v.is_attacking && query.is_on_ground" },
+            { "loop": "query.state_time >= 1.5" }
+          ]
+        },
+        "loop": {
+          "animations": [ "elice_loop_anim" ],
+          "transitions": [
+            { "idle": "!v.is_attacking && query.is_on_ground" }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.garra_ataque": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            { "tp_pose": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "atacando": "v.is_attacking" }
+          ]
+        },
+        "atacando": {
+          "animations": [
+            { "ataque_anim": "!v.is_first_person" },
+            { "ataque_caunter": "v.is_first_person" }
+          ],
+          "transitions": [
+            { "aparecendo": "!v.is_attacking" }
+          ],
+          "blend_transition": 0.15
+        },
+        "aparecendo": {
+          "animations": [
+            "aparicao_anim",
+            { "tp_pose": "!v.is_first_person" }
+          ],
+          "transitions": [
+            { "atacando": "v.is_attacking" },
+            { "idle": "query.any_animation_finished" }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    }
+  }
+}

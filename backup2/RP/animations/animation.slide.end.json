@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.slide.end": {
+			"loop": "hold_on_last_frame",
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": [-66.91, 15.36, -31.84],
+					"position": [0, -3, -12]
+				},
+				"leftArm": {
+					"rotation": [-41.25754, 5.88733, 6.97998],
+					"position": [1, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [47.00101, 3.44914, 132.7789]
+				},
+				"leftLeg": {
+					"rotation": [-19, 10.47903, -11.4287],
+					"position": [0, 0.75, 0]
+				},
+				"rightLeg": {
+					"rotation": [-22.22, 0, 0],
+					"position": [0, 2, 1]
+				},
+				"waist": {
+					"rotation": [-1.4206, 1.9494, -0.3139]
+				},
+				"body": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		}
+	}
+}

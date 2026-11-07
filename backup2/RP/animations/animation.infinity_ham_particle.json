@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.infinity_ham_particle": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.75,
+			"bones": {
+				"tlint1": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint2": {
+					"rotation": [0, 0, 0],
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint3": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint4": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.25": {"pre": [0, 0, 0], "post": [1, 1, 1]},
+						"0.75": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint5": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.25": {"pre": [0, 0, 0], "post": [1, 1, 1]},
+						"0.75": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint6": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.25": {"pre": [0, 0, 0], "post": [1, 1, 1]},
+						"0.75": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint7": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.25": {"pre": [0, 0, 0], "post": [1, 1, 1]},
+						"0.75": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"tlint8": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "stars_glow_ham_particle",
+					"locator": "rightItem"
+				}
+			}
+		}
+	}
+}

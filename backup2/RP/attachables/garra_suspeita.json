@@ -1,0 +1,76 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "parkour:garra_suspeita",
+      "item": {
+        "parkour:garra_suspeita": "query.is_owner_identifier_any('minecraft:player')"
+      },
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/graple_garra_estranha",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.garra_estranha",
+        "first_person": "geometry.garra_estranha"
+      },
+      "animations": {
+        "fp_pose": "animation.garra_estranha.position",
+        "tp_pose": "animation.garra_estranha.position_terceira_pessoa",
+        "surto_anim": "animation.garra_estranha.surto",
+        "curto_anim": "animation.garra_estranha.curto",
+        "rotacao_anim": "animation.garra_estranha.rotacao",
+        "twitch_ctrl": "controller.animation.garra_estranha.twitch",
+        "ataque_anim": "animation.garra_estranha.terceira_pessoa_attack",
+        "ataque_caunter": "animation.garra_estranha.terceira_pessoa_attack_caunter",
+        "ataque_ctrl": "controller.animation.garra_ataque",
+        "slide_anim": "animation.default_animation.garra_enferrujada_slide",
+        "slide_ctrl": "controller.animation.garra_slide",
+        "aparicao_anim": "animation.garra_estranha.aparicao",
+        
+        "up_anim": "animation.garra_estranha.up",
+        "dawn_anim": "animation.garra_estranha.dawn",
+        "dawn_loop_anim": "animation.garra_estranha.dawn.loop",
+        "impact_dawn_anim": "animation.garra_estranha.impact_dawn",
+        
+        "tp_dawn_anim": "animation.garra_estranha.tp.dawn",
+        "tp_impact_anim": "animation.garra_estranha.tp.impact",
+        
+        "parada_suave_dawn_fp_anim": "animation.garra_estranha.parada_suave_dawn_fp",
+        "parada_suave_up_fp_anim": "animation.garra_estranha.parada_suave_up_fp",
+        "tp_parada_suave_anim": "animation.garra_estranha.tp_decida_suave",
+        
+        "pulo_ctrl": "controller.animation.garra_pulo",
+        "elice_ative_anim": "animation.garra_estranha.elice_ative",
+        "elice_loop_anim": "animation.garra_estranha.elice_loop",
+        "mochila_ctrl": "controller.animation.garra_mochila"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.is_first_person = c.is_first_person;",
+          "v.is_attacking = query.cooldown_time_remaining('garra_ataque_cd') > 0;",
+          "v.is_sliding = query.cooldown_time_remaining('garra_slide_cd') > 0;",
+          "v.is_mochila_ativa = query.cooldown_time_remaining('garra_mochila_cd') > 0;"
+        ],
+        "animate": [
+          "twitch_ctrl",
+          "ataque_ctrl",
+          "slide_ctrl",
+          "pulo_ctrl",
+          "mochila_ctrl",
+          { 
+            "fp_pose": "v.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}
+

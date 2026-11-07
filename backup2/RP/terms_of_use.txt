@@ -1,0 +1,14 @@
+-= IMPORTANT NOTICES AND TERMS OF USE  =-
+​Thank you for downloading Air Strong Legs Parkour! A lot of effort, mathematical calculations, and dedication went into the programming (JavaScript), animations, and 3D models of this project.
+​To respect the creator's work, by downloading and using this Addon, you agree to the following rules:
+-= STRICTLY PROHIBITED: =-
+​Redistribute / Reupload: Do not upload this Addon to other websites, mobile mod apps, or Discord servers.
+​Create Your Own Links: Do not create your own direct download links (Mediafire, Google Drive, etc.) and do not use link shorteners (like AdFly, Linkvertise) to profit from this project.
+​Modify and Rerelease: Do not alter the files, codes, or textures to release a public "edited version" or "remake".
+​Plagiarize Codes: It is forbidden to copy the programming mechanics, .js files, 3D models, or animations to use in your own Addons without the creator's prior authorization.
+-= PERMITTED (AND ENCOURAGED): =-
+​Record Videos / Streams: Content creators (YouTube, Twitch, TikTok) are more than welcome to record gameplays, reviews, or series using this Addon!
+​Share Properly: If you are going to record a video or want to send the Addon to a friend, provide ONLY the link to the official page (my video or original post) in the description. Never share the direct download link.
+​Modify for Personal Use: You can tinker with the codes and alter the files just to play alone or with friends in your own world, as long as you do not publish it on the internet.
+​© Created by ThaguchoBisteca. All rights reserved.
+Have fun breaking the laws of gravity!

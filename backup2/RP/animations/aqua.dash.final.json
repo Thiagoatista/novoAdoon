@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.aqua.dash.final": {
+			"loop": "hold_on_last_frame",
+			"override_previous_animation": true,
+			"bones": {
+				"Waist": {
+					"rotation": [-12.47082, -0.91942, 2.52373],
+					"position": [0, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-1.80174, -0.28392, 11.83497],
+					"position": [0, 0, 0],
+					"scale": [1, 1, 0.9]
+				},
+				"LeftLeg": {
+					"rotation": [-0.5778, -5.02478, -10.76853],
+					"position": [0, 0, 0],
+					"scale": [1, 1, 0.9]
+				},
+				"LeftArm": {
+					"rotation": [-211.68972, 8.43538, -187.85995],
+					"position": [2, 0, 0]
+				},
+				"RightArm": {
+					"rotation": [-202.63132, -10.61998, 190.92139],
+					"position": [-2, 0, 0]
+				}
+			}
+		}
+	}
+}

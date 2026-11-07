@@ -1,0 +1,22 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "solucao_energetica": {
+            "textures": "textures/items/solucao_energetica"
+        },
+        "parkour_settings": {
+            "textures": "textures/items/parkour_settings"
+        },
+        "gold_boot_velocity": {
+            "textures": "textures/items/gold_boot_velocity"
+        },
+        "infinity_ham": {
+            "textures": "textures/items/infinity_ham"
+        },
+        "garra_suspeita": {
+            "textures": "textures/items/graple_garra_estranha_icon"
+        }
+    }
+}
+

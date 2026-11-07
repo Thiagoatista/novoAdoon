@@ -1,0 +1,43 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "parkour:garra_suspeita_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "OLO",
+      "RHP",
+      "CIC"
+    ],
+    "key": {
+      "O": {
+        "item": "minecraft:stripped_oak_log"
+      },
+      "L": {
+        "item": "minecraft:lever"
+      },
+      "R": {
+        "item": "minecraft:redstone_block"
+      },
+      "H": {
+        "item": "minecraft:lead"
+      },
+      "P": {
+        "item": "minecraft:copper_pickaxe"
+      },
+      "C": {
+        "item": "minecraft:copper_block"
+      },
+      "I": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "parkour:garra_suspeita",
+      "count": 1
+    }
+  }
+}

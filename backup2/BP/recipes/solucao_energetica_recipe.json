@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "parkour:solucao_energetica"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:potion",
+        "data": 0
+      },
+      {
+        "item": "minecraft:cocoa_beans"
+      },
+      {
+        "item": "minecraft:cocoa_beans"
+      },
+      {
+        "item": "minecraft:sugar"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:potion",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "parkour:solucao_energetica",
+      "count": 1
+    }
+  }
+}
+

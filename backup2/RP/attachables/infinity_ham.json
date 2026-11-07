@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "parkour:infinity_ham",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/infinity_ham_3d",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.infinity_ham_geo"
+      },
+      "animations": {
+        "eating_anim": "animation.ham.eating",
+        "eating_ctrl": "controller.animation.ham.eating",
+        "first_person_bob": "animation.ham.first_person_bob",
+        "bob_ctrl": "controller.animation.ham.first_person_bob",
+        "fp_pose": "animation.ham.fp_pose",
+        "particle_anim": "animation.infinity_ham_particle",
+        "sparkle_ctrl": "controller.animation.ham.sparkle",
+        "particle_off": "animation.infinity_ham_off_particle"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.is_first_person = c.is_first_person;"
+        ],
+        "animate": [
+          "eating_ctrl",
+          "bob_ctrl",
+          "sparkle_ctrl",
+          {
+            "fp_pose": "v.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}
+

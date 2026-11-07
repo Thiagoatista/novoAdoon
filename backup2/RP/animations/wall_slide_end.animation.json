@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wall_slide.end": {
+			"loop": "hold_on_last_frame",
+			"override_previous_animation": true,
+			"bones": {
+				"waist": {
+					"rotation": [2.5, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-170, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-170, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [5, 0, 0],
+					"position": [0, 3, 0]
+				},
+				"leftLeg": {
+					"rotation": [5, 0, 0]
+				},
+				"root": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}
